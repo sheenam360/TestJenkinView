@@ -4,7 +4,7 @@ node {
    }
    stage('Reg1') {
         try {
-            sh "mvn clean test -DsuiteXmlFile='src/test/resources/xml/testng.xml'
+            sh 'mvn clean test -DsuiteXmlFile='src/test/resources/xml/testng.xml'
         } catch (err) {
             
         } finally {
@@ -13,7 +13,7 @@ node {
    }
   stage('Reg2') {
         try {
-            sh "mvn clean test -DsuiteXmlFile='src/test/resources/xml/testng1.xml'
+            sh 'mvn clean test -DsuiteXmlFile='src/test/resources/xml/testng1.xml'
         } catch (err) {
             
         } finally {
