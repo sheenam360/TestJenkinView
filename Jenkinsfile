@@ -13,7 +13,7 @@ pipeline{
 		steps{
 			git 'https://github.com/sheenam360/TestJenkinView.git'
 			script{
-				bat "dir"
+				bat "mvn clean test"
 			}
 	}
 
