@@ -20,6 +20,14 @@ pipeline{
 	}
 
 	}
+	stage('Regression2'){
+		steps{
+			script{
+				bat "mvn clean test -DsuiteXmlFile=src/test/resources/xml/testng1.xml"
+			}
+	}
+
+	}
 	}
 
 }
