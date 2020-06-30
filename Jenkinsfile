@@ -3,8 +3,13 @@ pipeline {
     tools { 
         maven 'Maven 3.6.3' 
         jdk 'jdk1.8' 
+        git 'Git'
     }
     stages {
+          stage('Git checkout') { // for display purposes
+                git 'https://github.com/sheenam360/TestJenkinView.git'
+         }
+        
         stage ('Initialize') {
             steps {
                 bat '''
