@@ -6,7 +6,7 @@ pipeline {
         git 'Git'
     }
     stages {
-          stage('Git checkout') { // for display purposes
+          stage ('Git checkout') { // for display purposes
                 git 'https://github.com/sheenam360/TestJenkinView.git'
          }
         
