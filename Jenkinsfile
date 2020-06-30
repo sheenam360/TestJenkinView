@@ -1,6 +1,7 @@
 pipeline{
 	  environment {
-       		 PATH= ";c://Windows//System32"
+		 M2_HOME="D://apache-maven-3.6.3"
+       		 PATH= ";c://Windows//System32;D://apache-maven-3.6.3//bin"
   	 }
 	agent{
 		node{
