@@ -1,5 +1,10 @@
-node {
-   stage('Git checkout') { // for display purposes
+pipeline {
+    agent any
+    tools {
+        maven 'Maven 3.3.9'
+        jdk 'jdk8'
+}
+stage('Git checkout') { // for display purposes
       git 'https://github.com/sheenam360/TestJenkinView.git'
    }
    stage('Reg1') {
