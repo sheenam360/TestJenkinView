@@ -3,20 +3,9 @@ node {
       git 'https://github.com/sheenam360/TestJenkinView.git'
    }
    stage('Reg1') {
-        try {
-            sh 'mvn clean test -DsuiteXmlFile='src/test/resources/xml/testng.xml'
-        } catch (err) {
-            
-        } finally {
-           
-        }
-   }
+            sh "mvn clean test -DsuiteXmlFile='src/test/resources/xml/testng.xml"
+         }
   stage('Reg2') {
-        try {
-            sh 'mvn clean test -DsuiteXmlFile='src/test/resources/xml/testng1.xml'
-        } catch (err) {
-            
-        } finally {
-           
-        }
+            sh "mvn clean test -DsuiteXmlFile='src/test/resources/xml/testng1.xml"
    }
+}
