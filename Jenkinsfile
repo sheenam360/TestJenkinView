@@ -15,7 +15,7 @@ pipeline{
 		steps{
 			git 'https://github.com/sheenam360/TestJenkinView.git'
 			script{
-				bat "mvn clean test -DsuiteXmlFile=src\test\resources\xml\testng.xml"
+				bat "mvn clean test -DsuiteXmlFile=src/test/resources/xml/testng.xml"
 			}
 	}
 
