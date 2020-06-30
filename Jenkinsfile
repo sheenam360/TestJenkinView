@@ -8,7 +8,7 @@ pipeline {
         stage ('Initialize') {
             steps {
                 bat '''
-                    git 'https://github.com/sheenam360/TestJenkinView.git'
+                    "mvn clean test -DsuiteXmlFile=src/test/resources/xml/testng.xml"
                 ''' 
             }
         }
